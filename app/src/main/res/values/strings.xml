@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LiterallyRunYourCode</string>
+    <string name="title_activity_main">Map</string>
+    <string name="error_dialog_title">Error</string>
+    <string name="pause">Pause</string>
+    <string name="run">Run</string>
+    <string name="main_text_hint">Code Output (walk to start writing!)</string>
+    <string name="resume">Resume</string>
+    <string name="runlabel">Run!</string>
+    <string name="debuggerViewToolbarTitle">Run!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="program_steps_run">Program steps run: </string>
+    <string name="distance_ran">Distance ran: </string>
+    <string name="distance_to_next_program_step">"Distance to next program step: "</string>
+    <string name="help_menu_title">More Info</string>
+    <string name="delete_menu_title">Delete program</string>
+    <string name="youtubelink">https://youtu.be/8xxKl8vTTyM</string>
+    <string name="enter_input">Enter input</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>

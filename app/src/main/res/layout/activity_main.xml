@@ -1,0 +1,57 @@
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.nfd.literallyrunyourcode.MainActivity"
+        android:id="@+id/relativeLayout">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:map="http://schemas.android.com/apk/res-auto"
+              android:layout_width="0dp"
+              android:id="@+id/map"
+              tools:context="com.nfd.literallyrunyourcode.MainActivity"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              map:layout_constraintBottom_toTopOf="@+id/CodeTextView"
+              map:layout_constraintTop_toTopOf="parent"
+              map:layout_constraintEnd_toEndOf="parent"
+              map:layout_constraintStart_toStartOf="parent"
+              map:layout_constraintHorizontal_bias="0.0"
+              android:layout_height="0dp"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/CodeTextView"
+            android:hint="@string/main_text_hint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map"
+            android:layout_marginBottom="51dp"/>
+
+    <Button
+            android:text="@string/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pausebutton"
+            app:layout_constraintTop_toBottomOf="@+id/CodeTextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+
+    <Button
+            android:text="@string/run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/runbutton"
+            app:layout_constraintTop_toBottomOf="@+id/CodeTextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+
+</android.support.constraint.ConstraintLayout>

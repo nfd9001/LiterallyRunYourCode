@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".CodeEditorActivity">
+    <!-- "Mark Favorite", should appear as action button if possible -->
+
+    <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_action_help"
+            android:title="@string/help_menu_title"
+            app:showAsAction="always"
+            />
+    <item
+            android:id="@+id/delete"
+            android:title="@string/delete_menu_title"
+            />
+</menu>
